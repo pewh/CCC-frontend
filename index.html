@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="iPhoneBro" class="iPhone gen flex column">
+    <div id="iPhoneBro" class="iPhone gen">
         <div class="title">
             <input type="submit" class="back button" value="Clear" id="clear">
             <span class="contact_name button center">Chit Chat Cinema</span>
@@ -25,10 +25,17 @@
             </div>
 
         </div>
-        <form class="message flex row">
-            <input id="imessage" type="text" name="imessage" value="" placeholder="Pertanyaan" autocomplete=off>
-            <input id="send_btn" type="submit" value="Tanya" onsubmit="sendSMS();" class="disabled">
-            <input id="phone" type="hidden" name="number" value="">
+        <form class="message">
+            <table class="footer">
+                <tr>
+                    <td>
+                        <input id="imessage" type="text" name="imessage" value="" placeholder="Pertanyaan" autocomplete=off>
+                    </td>
+                    <td>
+                        <input id="send_btn" type="submit" value="Tanya" onsubmit="sendSMS();" class="disabled">
+                    </td>
+                </tr>
+            </table>
         </form>
     </div>
     <script src="cordora-1.9.0.js"></script>
