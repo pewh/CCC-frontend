@@ -5,8 +5,6 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    height: 100%;
-    overflow: hidden;
 }
 
 input[type=text] {
@@ -78,7 +76,6 @@ input[type=text] {
 }
 
 .iPhone {
-	height: 900px;
 	-moz-border-radius:3px;
 	-webkit-border-radius:3px;
 	font: 14px 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
