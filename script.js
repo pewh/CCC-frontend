@@ -116,6 +116,17 @@ $(document.forms[0]).submit(function(e) {
 		$.get('http://' + CCC_SETTING().server + ':' + CCC_SETTING().port + '/', { q: text }, function(data) {
             if (data) {
                 receiveText(data);
+
+                $('.img-zoomable').magnificPopup({
+                    type: 'image',
+                    closeOnContentClick: true,
+                    closeBtnInside: false,
+                    mainClass: 'mfp-no-margins mfp-zoom',
+                    zoom: {
+                        enabled: true,
+                        duration: 300
+                    }
+                });
             } else {
                 receiveText('Aplikasi tidak dapat terhubung ke server');
             }
